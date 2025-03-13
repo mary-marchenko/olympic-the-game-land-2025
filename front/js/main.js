@@ -53,3 +53,15 @@
         }
     });
 })();
+
+// padding no-ios
+document.addEventListener("DOMContentLoaded", function() {
+    let landCenter = document.querySelector('.land__info-center');
+    let landBottom = document.querySelector('.land__info-bottom');
+
+
+    if (!/iPad|iPhone|iPod|Mac/.test(navigator.userAgent)) {
+        landCenter.classList.add('noios-padding');
+        landBottom.classList.add('noios-padding');
+    }
+});

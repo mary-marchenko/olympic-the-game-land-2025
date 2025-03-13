@@ -36,9 +36,12 @@
         width: 65%
         line-height: 50px
         padding: 21px 25px 4px 22px
+        &.noios-padding
+          padding-top: 23px
       &-bottom
         line-height: 56px
-
+        &.noios-padding
+          padding-bottom: 14px
 @media screen and (max-width: 1550px)
   .footer
     &__text
@@ -65,8 +68,12 @@
         padding: 21px 25px 4px 18px
         span
           font-size: 20px
+        &.noios-padding
+          padding-top: 25px
       &-bottom
         line-height: 46px
+        &.noios-padding
+          padding-top: 21px
       &-link
         font-size: 20px
         line-height: 26px
@@ -297,6 +304,7 @@
     &__info
       &-wrap
         margin-top: 15px
+
       &-link
         margin: 15px 0 0 0
         padding: 17px 0 15px
@@ -323,9 +331,11 @@
       &-center
         width: 50%
         padding: 7px 8px 0 8px
+        &.noios-padding
       &-bottom
         width: 50%
         padding: 7px 5px 5px 5px
+        &.noios-padding
         &::before
           top: auto
           bottom: 50%
